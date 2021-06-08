@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 19-Mar-2021 às 01:02
+-- Tempo de geração: 09-Jun-2021 às 01:15
 -- Versão do servidor: 10.4.17-MariaDB
 -- versão do PHP: 8.0.0
 
@@ -39,9 +39,7 @@ CREATE TABLE `session` (
 --
 
 INSERT INTO `session` (`id`, `id_user`, `token`, `date`) VALUES
-(28, 5, 'b62850968746d99ce7207669f175c5d934223177', '2021-03-17 01:24:39'),
-(29, 5, '44cbd1492bb825990b6e6178927e282e20f71503', '2021-03-18 02:14:59'),
-(30, 5, '879bb11bca03b6caf3e975b75cf3be26cf69b920', '2021-03-19 00:31:13');
+(38, 5, '6a5c1cf5acce22e3e5215ff9cca66dc24390f321', '2021-06-09 01:08:58');
 
 -- --------------------------------------------------------
 
@@ -64,12 +62,9 @@ CREATE TABLE `tb_clientes` (
 --
 
 INSERT INTO `tb_clientes` (`id`, `nome`, `email`, `telefone`, `endereco`, `bairro`, `cidade`) VALUES
-(13, 'teste', '', '1111111', 'teste', 'teste', ''),
-(14, 'Luis Gustavo ', 'luis@gmail.com.br', '54996963138', 'Rua são marcos n000', 'São José ', ' Passo Fundo'),
-(15, 'Grazi ', 'grazi@net.br', '55555555', 'Rua doutor canovas ', 'Parque Farroupilha ', ' Bento'),
-(16, 'Lu', 'lusistema@outlook.com', '5430451260', 'Rua Charrua n 333', 'ParqueFarroupilha ', ''),
-(17, 'eeeeeeee', 'ppppp@outlook.net', '55555555555', 'eeeeeeeeeeee', 'tttttttttttt', ''),
-(18, 'Gustavo', 'gustavo55@gmail.com', '5430451260', 'Rua charrua', 'Sao jose', 'Passo Fundo');
+(23, 'Luis Gustavo', 'luis@upf.br', '5430456012', 'Rua charrua n111', 'Centro', 'Passo Fundo'),
+(24, 'Lg Teste', 'lgtest@teste.com', '54996961212', 'Rua teste n555', 'Vila Luiza ', 'Marau'),
+(25, 'Josias teste', 'josias@upf.br', '1198501260', 'Rua grau n987', 'Centro', 'Passo Fundo');
 
 -- --------------------------------------------------------
 
@@ -123,13 +118,13 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de tabela `session`
 --
 ALTER TABLE `session`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT de tabela `tb_clientes`
 --
 ALTER TABLE `tb_clientes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT de tabela `usuario`

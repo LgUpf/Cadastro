@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST")
 
   if (strlen($pass) > 0)
   {
-    array_push($res, "O Campo Password é invalido!");
+    array_push($res, "O Campo Senha é invalido!");
   }
 
   if(count($res) > 0)
@@ -72,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST")
   <body class="text-center">
     <form method="POST" action="index.php" class="form-signin">
       <img class="mb-4" src="../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+      <h1 class="h3 mb-3 font-weight-normal">Identifique</h1>
       <?php if(count($res) != 0) { 
         echo('<div class="alert alert-danger">');
         foreach($res as $index)
@@ -81,13 +81,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST")
         }
         echo('</div>');
       } ?>
-      <label for="inputEmail" class="sr-only">Email address</label>
-      <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" autofocus>
-      <label for="inputPassword" class="sr-only">Password</label>
-      <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
+      <label for="inputEmail" class="sr-only">E-mail</label>
+      <input type="email" name="email" id="inputEmail" class="form-control" placeholder="E-mail" autofocus>
+      <label for="inputPassword" class="sr-only">Senha</label>
+      <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Senha" required>
       <br>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-      <p class="mt-5 mb-3 text-muted">&copy; 2017-2021</p>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2021</p>
     </form>
   </body>
 </html>

@@ -1,6 +1,6 @@
 <?php
 
-require_once(__DIR__.'/../banco_de_dados/conexao.php');
+require_once(__DIR__.'/banco_de_dados/conexao.php');
 
 $fileName = "Relatorio de Cliente.csv";
 
@@ -29,7 +29,7 @@ $out = fopen('php://output', 'w');
 fwrite($out, convertArray(["Total de Clientes", $count]));
 fwrite($out, convertArray([]));
 
-fwrite($out, convertArray(["ID", "Nome", "E-mail", "Telefone", "Endereço", "Bairro", "Cidade"]));
+fwrite($out, convertArray(["ID", "Nome", "E-mail", "Telefone", "Endereco", "Bairro", "Cidade"]));
 
 if ($count > 0)
 {
